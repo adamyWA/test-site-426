@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Custom Concrete</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expert concrete construction services – Advanced Custom Concrete. Quality. Durability. Modern design.">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: #222;
+      background: #f6f7fb;
+      line-height: 1.6;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height: 400px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(34,42,55,0.55);
+      z-index: 0;
+    }
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .tagline {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-top: 1rem;
+    }
+    nav {
+      background: #222a37;
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #f7a440;
+    }
+    section {
+      max-width: 960px;
+      margin: 2.5rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 14px rgba(34,42,55,0.13);
+    }
+    section h2 {
+      color: #222a37;
+      text-align: center;
+      letter-spacing: 1.5px;
+    }
+    .about, .services, .gallery, .contact {
+      margin-bottom: 3rem;
+    }
+    .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .service {
+      flex: 1 1 220px;
+      min-width: 200px;
+      background: #f6f7fb;
+      padding: 1.4rem 1.2rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: box-shadow 0.2s;
+      box-shadow: 0 1px 6px rgba(34,42,55,0.09);
+    }
+    .service:hover {
+      box-shadow: 0 4px 20px rgba(34,42,55,0.14);
+    }
+    .gallery-photos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: center;
+    }
+    .gallery-photos img {
+      width: 240px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(34,42,55,0.09);
+      transition: transform 0.2s;
+    }
+    .gallery-photos img:hover {
+      transform: scale(1.045);
+    }
+    .contact-form {
+      max-width: 420px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.7rem;
+      border: 1px solid #d1d6de;
+      border-radius: 6px;
+      font-size: 1em;
+      background: #f6f7fb;
+    }
+    .contact-form button {
+      background: #f7a440;
+      color: #fff;
+      padding: 0.9rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.18s;
+    }
+    .contact-form button:hover {
+      background: #222a37;
+    }
+    .contact-info {
+      margin-top: 2rem;
+      text-align: center;
+      color: #222a37;
+      font-size: 1.05rem;
+    }
+    footer {
+      background: #222a37;
+      color: #fff;
+      padding: 1.4rem 0;
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.97rem;
+    }
+    @media (max-width: 650px) {
+      header { height: 260px; }
+      .gallery-photos img { width: 100%; max-width: 320px; height: 120px; }
+      .services-list { flex-direction: column; }
+      section { padding: 1rem; }
+      nav a { margin: 0 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Advanced Custom Concrete</div>
+    <div class="tagline">Concrete Solutions for Modern Construction</div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section class="about" id="about">
+      <h2>About Us</h2>
+      <p style="text-align:center;max-width:630px;margin:1rem auto 0;">
+        At <b>Advanced Custom Concrete</b>, we deliver top-quality concrete construction services for residential, commercial, and industrial clients. With decades of experience, attention to detail, and a passion for excellence, we create structures that stand the test of time and weather. Trust us for your next driveway, foundation, or architectural concrete project.
+      </p>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="services-list">
+        <div class="service">
+          <h3>Driveways & Patios</h3>
+          <p>Modern and durable driveways, patios, walkways, and outdoor spaces tailored to your needs.</p>
+        </div>
+        <div class="service">
+          <h3>Foundations</h3>
+          <p>Solid, reliable concrete foundations for homes, commercial buildings, and additions.</p>
+        </div>
+        <div class="service">
+          <h3>Stamped & Decorative Concrete</h3>
+          <p>Enhance value and style with stunning decorative finishes and custom stamp patterns.</p>
+        </div>
+        <div class="service">
+          <h3>Repair & Restoration</h3>
+          <p>Crack repair and surface restoration to extend the life and appearance of your concrete.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h2>Project Gallery</h2>
+      <div class="gallery-photos">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=720&q=80" alt="Concrete construction 1" />
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Concrete construction 2" />
+        <img src="https://images.pexels.com/photos/5854190/pexels-photo-5854190.jpeg?auto=compress&w=800&q=80" alt="Concrete construction team" />
+        <img src="https://cdn.pixabay.com/photo/2014/12/21/23/56/construction-579123_1280.png" alt="Concrete machinery" />
+      </div>
+      <p style="text-align:center;font-size:0.96em;margin-top:1.1rem;">
+        <i>All project imagery is license-free and for demonstration only.<br>
+        Photos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>, 
+        <a href="https://pexels.com" target="_blank" rel="noopener">Pexels</a>,
+        <a href="https://pixabay.com" target="_blank" rel="noopener">Pixabay</a>
+        </i>
+      </p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="How can we help you?" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p>
+          <b>Phone:</b> (555) 123-4567<br>
+          <b>Email:</b> info@advancedcustomconcrete.com<br>
+          <b>Location:</b> 123 Concrete Way, Buildsville, ST 45678
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Advanced Custom Concrete. All rights reserved.
+  </footer>
+</body>
+</html>
